@@ -198,13 +198,25 @@ var makeBestMove = function () {
 
 
 var positionCount;
+var depth;
 var getBestMove = function (game) {
     if (game.game_over()) {
         alert('Game over');
     }
 
     positionCount = 0;
-    var depth = parseInt($('#search-depth').find(':selected').text());
+    var choice = ($('#search-depth').find(':selected').text());
+
+    if(choice == "Novizio")
+        depth = 1;
+    else if(choice == "Facile")
+        depth = 2;
+    else if(choice == "Medio")
+        depth = 3;
+    else if(choice == "Difficile")
+        depth = 4;
+    else if(choice == "Maestro")
+        depth = 5;
 
     var d = new Date().getTime();
     var bestMove = minimaxRoot(depth, game, true);
