@@ -1,7 +1,7 @@
 var board,
     game = new Chess();
 
-/*Inizio pare di IA */
+/*Inizio parte di IA */
 
 var minimaxRoot =function(depth, game, isMaximisingPlayer) {
 
