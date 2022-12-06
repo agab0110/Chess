@@ -1,7 +1,7 @@
 var board,
     game = new Chess();
 
-/*The "AI" part starts here */
+/*Inizio pare di IA */
 
 var minimaxRoot =function(depth, game, isMaximisingPlayer) {
 
@@ -70,6 +70,8 @@ var evaluateBoard = function (board) {
 var reverseArray = function(array) {
     return array.slice().reverse();
 };
+
+/* Matrici per i valori minmax */
 
 var pawnEvalWhite =
     [
@@ -177,7 +179,7 @@ var getPieceValue = function (piece, x, y) {
 };
 
 
-/* board visualization and games state handling */
+/* visualizzazione della gameboard e gestione dello stato di gioco */
 
 var onDragStart = function (source, piece, position, orientation) {
     if (game.in_checkmate() === true || game.in_draw() === true ||
@@ -196,6 +198,8 @@ var makeBestMove = function () {
     }
 };
 
+
+/* Gesstione della ricerca dell'albero di minmax */
 
 var positionCount;
 var depth;
