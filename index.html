@@ -6,34 +6,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="board" class="board"></div>
-<div class="info">
-    Difficoltà:
-    <select id="search-depth">
-        <option value="1">Novizio</option>
-        <option value="2">Facile</option>
-        <option value="3" selected>Medio</option>
-        <option value="4">Diffcile</option>
-        <option value="5">Maestro</option>
-    </select>
-
-    <br>
-    <span>Posizioni valutate: <span id="position-count"></span></span>
-    <br>
-    <span>Tempo: <span id="time"></span></span>
-    <br>
-    <span>Posizione/i: <span id="positions-per-s"></span> </span>
-    <br>
-    <br>
-    <div id="move-history" class="move-history">
+    <div id="board" class="board"></div>
+    <div class="info">
+        Difficoltà:
+        <select id="search-depth">
+            <option value="1">Novizio</option>
+            <option value="2">Facile</option>
+            <option value="3" selected>Medio</option>
+            <option value="4">Diffcile</option>
+            <option value="5">Maestro</option>
+        </select>
+        <br>
+        <span>Posizioni valutate: <span id="position-count"></span></span>
+        <br>
+        <span>Tempo: <span id="time"></span></span>
+        <br>
+        <span>Posizioni:</span>
+        <div id="move-history" class="move-history"></div>
     </div>
-</div>
-<script src="lib/jquery/jquery-3.2.1.min.js"></script>
-<script src="lib/chessboardjs/js/chess.js"></script>
-<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
-<script src="script.js"></script>
-<script>
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/chessboardjs/js/chess.js"></script>
+    <script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="script.js"></script>
+    <script>
 
-</script>
+    </script>
 </body>
 </html>
